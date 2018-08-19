@@ -78,8 +78,10 @@ button {
 .logo_text {
     width: 70%;
     height: 50%;
+    font-size: 16px;
     max-width: 250px;
     margin: auto;
+    margin-top: 21px;
     margin-left: 1px;
 }
 
