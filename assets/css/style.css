@@ -3,11 +3,6 @@ body {
     margin: 0;
 }
 
-body>* {
-    -webkit-appearance: none;
-}
-
-
 a {
     color: inherit;
     text-decoration: none;
@@ -22,6 +17,7 @@ a {
 
 .nav_button {
     position: absolute;
+    -webkit-appearance: none;
     box-shadow: 0 0 12px 1px  gray;
     box-sizing: border-box;
     right: 10px;
@@ -409,6 +405,7 @@ a {
     color: #FFF;
     border: 0;
     border-radius: 50px;
+    -webkit-appearance: none;
 }
 
 
