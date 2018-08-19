@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    padding: 0;
+}
+
 .header {
     box-sizing: border-box;
     position: relative;
@@ -202,6 +206,7 @@ a {
 }
 
 .about_social_media_link_button {
+    padding: 0;
     width: 50px;
     height: 50px;
     border: 1px solid #000;
@@ -383,6 +388,7 @@ a {
 .contact_us_form input[type='text'], .contact_us_form input[type='email'], .contact_us_form input[type='tel'] {
     width: 100%;
     max-width: 250px;
+    -webkit-appearance: none;
     height: 35px;
     border-radius: 5px;
     box-sizing: border-box;
@@ -393,6 +399,7 @@ a {
 .contact_us_form textarea {
     height: 110px;
     width: 97%;
+    -webkit-appearance: none;
     max-width: 250px;
     margin-bottom: 15px;
 }
@@ -518,6 +525,7 @@ a {
 .project_link {
     width: 50px;
     height: 50px;
+    background-color: transparent;
     margin: auto;
     border-radius: 40px;
     border: 1px solid #fff;
@@ -527,7 +535,6 @@ a {
 .project_link svg {
     width: 80%;
     height: 50%;
-    margin-top: 10px;
 }
 
 .members {
