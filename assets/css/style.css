@@ -20,7 +20,7 @@ a {
     position: absolute;
     box-shadow: 0 0 12px 1px  gray;
     box-sizing: border-box;
-    right: 5px;
+    right: 10px;
     top: 17px;
     border: 0;
     height: 40px;
@@ -44,7 +44,6 @@ a {
 
 .logo_div {
     width: 100%;
-    border: 1px solid red;
     max-width: 300px;
     height: 73px;
     margin-right: 0;
