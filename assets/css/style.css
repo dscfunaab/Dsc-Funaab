@@ -18,7 +18,7 @@ a {
 .nav_button {
     position: absolute;
     -webkit-appearance: none;
-    box-shadow: 0 0 12px 1px  gray;
+    padding: 0;
     box-sizing: border-box;
     right: 10px;
     top: 17px;
