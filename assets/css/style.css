@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+body>* {
+    -webkit-appearance: none;
+}
+
 
 a {
     color: inherit;
