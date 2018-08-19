@@ -28,14 +28,15 @@ button {
     padding: 0;
     box-sizing: border-box;
     right: 10px;
+    z-index: 2;
     top: 17px;
     border: 0;
     height: 40px;
     font-size: 20px;
-    -webkit-transition: color .5s width .3s height .3s ease-in-out;
-    -moz-transition: width .5s height .3s ease-in-out;
-    -o-transition: width .5s height .3s ease-in-out;
-    transition: width .5s height .3s ease-in-out;
+    -webkit-transition: background-color .3s width .3s height .3s ease-in-out;
+    -moz-transition: background-color .3s width .5s height .3s ease-in-out;
+    -o-transition: background-color .3s width .5s height .3s ease-in-out;
+    transition: background-color .3s width .5s height .3s ease-in-out;
     width: 40px;
     background-color: #417DF9;
     color: #fff;
@@ -46,7 +47,56 @@ button {
 }
 
 .nav_button:hover {
-    color: #000;
+    background-color: rgb(8, 38, 121);
+    height: 45px;
+    width: 45px;
+}
+
+.top {
+    transform: rotateZ(45deg) translateY(2px) translateX(5px);
+}
+
+.middle {
+    display: none;
+    
+}
+
+.bottom { 
+    transform: rotateZ(-45deg) translateY(0px) translateX(3px);
+}
+
+
+#top, #middle, #bottom {
+    width: 70%;
+    border-radius: 2px;
+    border: 1.5px solid #fff;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+#top {
+    /* transform: rotateZ(0) translateY(0) translateX(0); */
+    margin-top: 5px;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+#middle {
+    -webkit-transition: display .3s ease-in-out;
+    -moz-transition: display .3s ease-in-out;
+    -o-transition: display .3s ease-in-out;
+    transition: display .3s ease-in-out;
+}
+
+#bottom {
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .logo_div {
@@ -97,8 +147,8 @@ button {
 }
 
 .nav {
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     -webkit-transition: margin-left .5s ease-in-out;
     -moz-transition: margin-left .5s ease-in-out;
     -o-transition: margin-left .5s ease-in-out;
@@ -195,6 +245,7 @@ button {
 }
 
 .about_heading {
+    margin-top: 50px;
 }
 
 .about_text {
@@ -253,6 +304,7 @@ button {
 
 #core_team {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .core_team_heading {
@@ -306,7 +358,6 @@ button {
 }
 
 #blog {
-    margin-top: 20px;
     background-image: url("../images/Rectangle 2.png");
     background-position: center;
     background-size: cover;
@@ -316,6 +367,7 @@ button {
 }
 
 .blog_heading {
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -373,6 +425,7 @@ button {
     width: 80%;
     margin: auto;
     height: 40%;
+    margin-top: 50px;
 }
 
 .contact_us_image img {
