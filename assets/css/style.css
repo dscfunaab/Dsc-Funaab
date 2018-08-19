@@ -1,5 +1,5 @@
 body {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
@@ -14,7 +14,10 @@ button {
 
 .header {
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: #fff;
     width: 100vw;
     box-shadow: 0 0 10px 1px  gray;
 }
@@ -75,7 +78,7 @@ button {
 .logo_text {
     width: 70%;
     height: 50%;
-    max-width: 200px;
+    max-width: 220px;
     margin: auto;
     margin-left: 1px;
 }
@@ -118,10 +121,6 @@ button {
     border-bottom: 2px solid #417DF9;
 }
 
-/* .main {
-    padding: 15px;
-} */
-
 #home {
     display: flex;
     flex-direction: row;
@@ -136,7 +135,7 @@ button {
     width: 70vw;
     max-width: 250px;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 30%;
     height: 50vh;
 }
 
@@ -223,7 +222,7 @@ button {
 .dsc_lead_profile {
     height: 100px;
     margin: auto;
-    max-width: 250px;
+    max-width: 280px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -387,7 +386,7 @@ button {
 
 .contact_us_form input[type='text'], .contact_us_form input[type='email'], .contact_us_form input[type='tel'] {
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
     -webkit-appearance: none;
     height: 35px;
     border-radius: 5px;
@@ -400,13 +399,13 @@ button {
     height: 110px;
     width: 97%;
     -webkit-appearance: none;
-    max-width: 250px;
+    max-width: 280px;
     margin-bottom: 15px;
 }
 
 .contact_us_form input[type='submit'] {
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
     height: 40px;
     background-color: #417DF9;
     color: #FFF;
@@ -422,6 +421,7 @@ button {
 
 .project_heading, .members_heading {
     padding-left: 10px;
+    margin-top: 30%;
     margin-bottom: 30px;
 }
 
