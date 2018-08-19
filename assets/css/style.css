@@ -222,8 +222,9 @@ button {
 
 
 .dsc_lead_profile {
-    height: 100px;
+    height: 150px;
     margin: auto;
+    margin-bottom: 50px;
     max-width: 280px;
     display: flex;
     flex-direction: row;
