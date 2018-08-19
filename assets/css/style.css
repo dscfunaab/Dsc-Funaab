@@ -225,7 +225,7 @@ button {
     height: 120px;
     margin: auto;
     margin-bottom: 50px;
-    max-width: 280px;
+    max-width: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
