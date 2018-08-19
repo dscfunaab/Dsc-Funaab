@@ -222,13 +222,13 @@ button {
 
 
 .dsc_lead_profile {
-    height: 150px;
+    height: 120px;
     margin: auto;
     margin-bottom: 50px;
     max-width: 280px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -243,7 +243,8 @@ button {
 
 .dsc_lead_profile_info {
     margin: auto;
-    max-width: 165px;
+    width: 60%;
+    /* max-width: 180px; */
 }
 
 .dsc_lead_profile_info>* {
