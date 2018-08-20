@@ -77,7 +77,6 @@ button {
 
 
 #top {
-    /* transform: rotateZ(0) translateY(0) translateX(0); */
     margin-top: 5px;
     -webkit-transition: transform .3s ease-in-out;
     -moz-transition: transform .3s ease-in-out;
@@ -141,7 +140,6 @@ button {
 }
 
 .dsc_blue {
-    font-family: Montserrat;
     line-height: normal;
     color: #417DF9;
 }
@@ -162,10 +160,10 @@ button {
 }
 
 .nav_item {
-    -webkit-transition: border-bottom .5s ease-in-out;
-    -moz-transition: border-bottom .5s ease-in-out;
-    -o-transition: border-bottom .5s ease-in-out;
-    transition: border-bottom .5s ease-in-out;
+    -webkit-transition: border-bottom .2s ease-in-out;
+    -moz-transition: border-bottom .2s ease-in-out;
+    -o-transition: border-bottom .2s ease-in-out;
+    transition: border-bottom .2s ease-in-out;
     height: 10.28%;
 }
 
@@ -179,13 +177,16 @@ button {
     height: 100%;
 }
 
+.home_container {
+    background-color: #FCFCFC;
+}
+
 #home {
     display: flex;
     flex-direction: row;
     padding: 10px;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    background-color: #FCFCFC;
     justify-content: space-between;
 }
 
@@ -210,7 +211,8 @@ button {
 
 .big_words_motto {
     width: 90%;
-    text-align: left;
+    text-align: center;
+    margin: auto;
     font-size: 22px;
     font-weight: bold;
 }
@@ -225,6 +227,7 @@ button {
 
 .home_text {
     text-align: center;
+    margin: auto;
     max-width: 350px;
 }
 
@@ -251,7 +254,7 @@ button {
 }
 
 .about_heading {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .about_text {
@@ -260,7 +263,7 @@ button {
 }
 
 .about_social_media_link{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .about_social_media_link_button {
@@ -301,7 +304,6 @@ button {
 .dsc_lead_profile_info {
     margin: auto;
     width: 60%;
-    /* max-width: 180px; */
 }
 
 .dsc_lead_profile_info>* {
@@ -346,17 +348,16 @@ button {
 }
 
 .core_team_individual_image {
-    width: 80%;
     border-radius: 80px;
-    max-width: 150px;
-    max-height: 150px;
+    width: 150px;
+    height: 150px;
     margin: auto;
 }
 
 .core_team_individual_image img {
     border-radius: 80px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 150px;
+    height: 150px;
 }
 
 .core_team_individual_info {
@@ -427,11 +428,23 @@ button {
     justify-content: space-between;
 }
 
-.contact_us_image {
+.contact_us_image_container {
     width: 80%;
     margin: auto;
-    height: 40%;
+    height: 300px;
     margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contact_us_heading {
+    max-width: 200px;
+    margin: auto;
+}
+
+.contact_us_image {
+    max-width: 350px;
+    height: 230px;
+    margin: auto;
 }
 
 .contact_us_image img {
@@ -463,13 +476,13 @@ button {
     height: 110px;
     width: 97%;
     -webkit-appearance: none;
-    max-width: 280px;
+    max-width: 275px;
     margin-bottom: 15px;
 }
 
 .contact_us_form input[type='submit'] {
     width: 100%;
-    max-width: 280px;
+    max-width: 285px;
     height: 40px;
     background-color: #417DF9;
     color: #FFF;
@@ -641,6 +654,236 @@ button {
     margin: 3px;
 }
 
+@media (min-width: 450px) {
+    .logo_image {
+        margin-left: 10px;
+    }
+
+    .landing_image {
+        max-width: 300px;
+    }
+
+    .landing_text {
+        margin: auto;
+    }
+
+    .about_text {
+        max-width: 400px;
+    }
+
+    .blog_container {
+        max-width: 500px;
+    }
+
+    .blog_title {
+        width: 100%;
+    }
+
+    .contact_us_image_container {
+        height: 400px;
+    }
+
+    .contact_us_heading {
+        margin-left: 35px;
+        max-width: 250px;
+    }
+
+    .contact_us_image {
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        height: 300px;
+    }
+
+    .contact_us_image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .contact_us_form {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .contact_us_form label:first-of-type {
+        width: 60%;
+        display: inline-block;
+    }
+
+    .contact_us_form input[type='text'] {
+        width: 48%;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact_us_form input[type='submit'], .contact_us_form textarea, .contact_us_form input[type='email'], .contact_us_form input[type='tel'] {
+        max-width: 322px; 
+        margin-bottom: 20px;
+    }
+    
+    .project_heading, .members_heading {
+        margin-top: 90px;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .project {
+        max-width: 250px;
+        height: 250px; 
+    }
+}
+
+@media (min-width: 650px) {
+    #home {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 80px;
+        flex-direction: row-reverse;
+    }
+
+    .landing_image {
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
+        height: 50%;
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    .landing_image img {
+        max-width: 100%;
+    }
+    
+    .landing_text {
+        margin-top: 10px;
+        width: 65%;
+    }
+
+    .big_words_motto {
+        text-align: left;
+    }
+
+    .home_text {
+        text-align: justify;
+    }
+
+    .twitter_link {
+        margin-top: 30px;
+    }
+
+    .about_text {
+        max-width: 500px;
+    }
+
+    .core_container {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .core_team_heading {
+        text-align: justify;
+        margin-left: 0;
+    }
+
+    .core_team_members {
+        width: 100%;
+    }
+
+    .core_team_individual {
+        max-width: 180px;
+    }
+
+    #blog {
+        min-height: 450px;
+    }
+
+    .blog_container {
+        max-width: 900px;
+    }
+
+    .blog_title {
+        margin-bottom: 30px;
+    }
+
+    #contact_us,.projects, .members, .member_container, .core_container, .project_container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .contact_us_image_container {
+        width: 55%;
+        max-width: 370px;
+    }
+
+    .contact_us_heading {
+        width: 90%;
+        max-width: 300px;
+
+    }
+
+    .contact_us_form {
+        width: 40%;
+        align-content: flex-end;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+
+    #about, #core_team, #contact_us {
+        margin-top: 50px;
+    }
+
+    .project {
+        max-width: 280px;
+    }
+
+    .member_info {
+        max-width: 200px;
+    }
+
+}
+
+
+@media (min-width: 850px) {
+    .nav_button {
+        display: none;
+    }
+   
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    
+    .logo_div {
+        width: 40%;
+    }
+
+    .nav {
+        margin-left: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 60%;
+        height: 60px;
+        margin: auto;
+    }
+    
+    .nav_item {
+        width: auto;
+        height: 100%;
+    }
+
+    .about_text {
+        width: 90%;
+        max-width: 600px;
+    }
+
+}
 
 
 
