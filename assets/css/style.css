@@ -884,6 +884,10 @@ button {
         max-width: 600px;
     }
 
+    #blog {
+        min-height: 550px;
+    }
+
 }
 
 
