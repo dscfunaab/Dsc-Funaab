@@ -9,6 +9,7 @@ a {
 }
 
 button {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
 }
 
@@ -402,7 +403,7 @@ button {
 .medium_blog_button {
     margin: auto;
     width: 150px;
-    display: block;
+    display: flex;
     height: 50px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -412,14 +413,17 @@ button {
 }
 
 .medium_blog_button p {
-    display: inline-block;
-    padding-right: 10px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 
 .medium_blog_button i {
     font-size: 22px;
-    padding-top: 10px;
 }
 
 #contact_us {
@@ -476,6 +480,7 @@ button {
 }
 
 .contact_us_form textarea {
+    font-family: 'Montserrat', sans-serif;
     height: 110px;
     width: 97%;
     -webkit-appearance: none;
@@ -484,6 +489,7 @@ button {
 }
 
 .contact_us_form input[type='submit'] {
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     max-width: 285px;
     height: 40px;
@@ -876,6 +882,7 @@ button {
         width: 60%;
         height: 60px;
         margin: auto;
+        margin-top: 10px;
     }
     
     .nav_item {
