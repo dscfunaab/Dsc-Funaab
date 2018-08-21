@@ -20,7 +20,7 @@ button {
     top: 0;
     background-color: #fff;
     width: 100vw;
-    box-shadow: 0 0 10px 1px  gray;
+    box-shadow: 10px 4px 30px rgba(211, 215, 221, 0.25);
 }
 
 .nav_button {
@@ -137,12 +137,14 @@ button {
 
 .logo_text h2 {
     width: 90%;
+    font-weight: normal;
     margin: auto;
 }
 
 .dsc_blue {
     line-height: normal;
     color: #417DF9;
+    font-weight: 1000;
 }
 
 .nav {
@@ -220,6 +222,7 @@ button {
 
 .big_words_motto h3:first-of-type {
     margin-bottom: 0;
+    color: #333;
 }
 
 .big_words_motto h3:last-of-type {
@@ -230,12 +233,15 @@ button {
     text-align: center;
     margin: auto;
     max-width: 350px;
+    color: #333;
+    font-size: 18px;
 }
 
 .twitter_link {
     width: 70%;
     margin: auto;
-    max-width: 200px;
+    font-size: 16px;
+    max-width: 250px;
     height: 60px;
     font-weight: bold;
     color: #417DF9;
@@ -256,6 +262,15 @@ button {
 
 .about_heading {
     margin-top: 10px;
+    color: #333;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.about_heading h2 {
+    font-weight: normal;
 }
 
 .about_text {
@@ -313,6 +328,16 @@ button {
     margin: 0;
 }
 
+.dsc_lead_profile_info h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dsc_lead_profile_info h6 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
 #core_team {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -344,10 +369,15 @@ button {
 
 .core_team_individual {
     padding: 5px;
-    background-color: rgb(241, 241, 241);
     width: calc(100% - 10px);
-    max-width: 250px;
+}
+
+.core_team_individual> div:first-of-type {
+    max-width: 200px;
+    height: 160px;
     margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: #FBFBFB;
 }
 
 .core_team_individual_image {
@@ -365,6 +395,15 @@ button {
 
 .core_team_individual_info {
     text-align: center;
+}
+
+.core_team_individual_info p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+..core_team_individual_info p:last-of-type {
+    font-size: 16px;
 }
 
 #blog {
@@ -880,6 +919,7 @@ button {
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 60%;
+        color: #343842;
         height: 60px;
         margin: auto;
         margin-top: 10px;
@@ -918,7 +958,7 @@ button {
     }
 
     .about_heading {
-        font-weight: 300;
+        font-weight: thin;
         line-height: normal;
         font-size: 25px;
     }
