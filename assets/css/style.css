@@ -260,6 +260,8 @@ button {
 .about_text {
     max-width: 300px;
     margin: auto;
+    color: #343842;
+    letter-spacing: 0.02em;
 }
 
 .about_social_media_link{
@@ -499,6 +501,8 @@ button {
 
 .project_heading, .members_heading {
     padding-left: 10px;
+    color: #333333;
+    font-weight: bold;
     margin-top: 30%;
     margin-bottom: 30px;
 }
@@ -737,7 +741,7 @@ button {
 
 @media (min-width: 650px) {
     #home {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
         margin-top: 80px;
         flex-direction: row-reverse;
@@ -779,7 +783,7 @@ button {
 
     .core_container {
         width: 80%;
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
     }
 
@@ -801,7 +805,7 @@ button {
     }
 
     .blog_container {
-        max-width: 900px;
+        max-width: 1000px;
     }
 
     .blog_title {
@@ -809,7 +813,7 @@ button {
     }
 
     #contact_us,.projects, .members, .member_container, .core_container, .project_container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
     }
 
@@ -879,13 +883,65 @@ button {
         height: 100%;
     }
 
+    #home {
+        height: 600px;
+    }
+
+    .landing_image {
+        margin: auto;
+        margin-top: 113px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .landing_text {
+        max-width: 634px;
+        margin-top: 128px;
+    }
+
+    .big_words_motto {
+        font-weight: bold;
+        line-height: 43px;
+        font-size: 30px;
+        max-width: 500px;
+    }
+
+    .home_text {
+        max-width: 500px;
+    }
+
+    .about_heading {
+        font-weight: 300;
+        line-height: normal;
+        font-size: 25px;
+    }
+
     .about_text {
         width: 90%;
         max-width: 600px;
     }
 
+    .core_team_heading {
+        font-weight: bold;
+        color: #333333;
+    }
+
     #blog {
         min-height: 550px;
+    }
+
+    .contact_us_heading {
+        line-height: 25px;
+        color: #333333;
+        font-size: 25px;
+    }
+
+    .contact_us_heading P {
+        margin-bottom: 0;
+    } 
+
+    .project_heading, .members_heading {
+        font-weight: bold;
     }
 
 }
