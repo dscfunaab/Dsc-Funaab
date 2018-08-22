@@ -399,7 +399,7 @@ button {
     width: 200px;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    height: 250px;
+    height: 251px;
     background-color: #417DF9;
     box-shadow: 0 20px 50px 0 #417DF9;
     margin: auto;
