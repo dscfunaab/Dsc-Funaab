@@ -415,7 +415,7 @@ button {
     transition: opacity .3s ease-in-out;
     height: 251px;
     background-color: #417DF9;
-    box-shadow: 0 31px 40px 0.1px #417DF9;
+    box-shadow: 0 30px 40px 0 rgba(79, 65, 249, 0.4);
     margin: auto;
     border-radius: 5px;
     color: #fff;
