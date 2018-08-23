@@ -8,8 +8,6 @@ a {
     text-decoration: none;
 }
 
-a:
-
 button {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -172,7 +170,7 @@ button {
     height: 10.28%;
 }
 
-.nav_item:hover {
+.active_link {
     border-bottom: 2px solid #417DF9;
 }
 
@@ -188,7 +186,7 @@ button {
 }
 
 .nav_item a:hover {
-    color: blue;
+    color: #333;
 }
 
 .nav_item a:active {
@@ -268,7 +266,7 @@ button {
     -o-border-radius: 50px;
     border-radius: 50px;
     background-color: #fff;
-    box-shadow: 0px 60px 107px rgba(37, 37, 37, 0.15); 
+    box-shadow: 0px 20px 107px rgba(37, 37, 37, 0.15); 
 }
 
 #about {
@@ -396,6 +394,7 @@ button {
     padding: 5px;
     width: calc(100% - 10px);
     position: relative;
+    margin-bottom: 30px;
 }
 
 .core_team_individual> div:nth-child(1) {
@@ -416,8 +415,9 @@ button {
     transition: opacity .3s ease-in-out;
     height: 251px;
     background-color: #417DF9;
-    box-shadow: 0 20px 50px 0 #417DF9;
+    box-shadow: 0 30px 40px 0.1px #417DF9;
     margin: auto;
+    border-radius: 5px;
     color: #fff;
 }
 

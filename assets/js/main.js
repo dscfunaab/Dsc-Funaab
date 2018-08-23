@@ -6,8 +6,6 @@ const topDiv = document.querySelector('#top');
 const middleDiv = document.querySelector('#middle');
 const bottomDiv = document.querySelector('#bottom');
 
-// console.log(window.location);
-
 const animateNavButton = function () {
     if(screen.width < 850) {
         if(nav.offsetLeft != 0){
@@ -25,8 +23,17 @@ const animateNavButton = function () {
     }
 }
 
+const MakeActive = function () {
+    const siblingElement = Array.prototype.slice.call(this.parentElement.children);
+    siblingElement.forEach( function(sibling) {
+        sibling.classList.remove('active_link');
+    });
+    this.classList.add('active_link');
+}
+
 navButton.addEventListener('click', animateNavButton);
 
 navLink.forEach(function(link) {
     link.addEventListener('click', animateNavButton);
+    link.addEventListener('click', MakeActive);
 });
