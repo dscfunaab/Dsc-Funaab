@@ -8,6 +8,8 @@ a {
     text-decoration: none;
 }
 
+a:
+
 button {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -176,8 +178,21 @@ button {
 
 .nav_item a {
     display: block;
+    display: block;
     width: 100%;
     height: 100%;
+}
+
+.nav_item a:link {
+    color: inherit;
+}
+
+.nav_item a:hover {
+    color: blue;
+}
+
+.nav_item a:active {
+    color: #417DF9;
 }
 
 .home_container {
@@ -578,10 +593,15 @@ button {
     margin-bottom: 15px;
 }
 
+input:active {
+    border: 1px solid #417DF9;
+}
+
 .contact_us_form textarea {
     font-family: 'Montserrat', sans-serif;
     height: 110px;
     width: 97%;
+    border-radius: 5px;
     -webkit-appearance: none;
     max-width: 275px;
     margin-bottom: 15px;
@@ -846,7 +866,7 @@ button {
 
 @media (min-width: 650px) {
     #home {
-        max-width: 1000px;
+        max-width: 900px;
         margin: auto;
         margin-top: 80px;
         flex-direction: row-reverse;
@@ -888,7 +908,7 @@ button {
 
     .core_container {
         width: 80%;
-        max-width: 1000px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -910,7 +930,7 @@ button {
     }
 
     .blog_container {
-        max-width: 1000px;
+        max-width: 900px;
     }
 
     .blog_title {
@@ -918,7 +938,7 @@ button {
     }
 
     #contact_us,.projects, .members, .member_container, .core_container, .project_container {
-        max-width: 1000px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -969,9 +989,11 @@ button {
     
     .logo_div {
         width: 40%;
+        margin: auto;
     }
 
     .nav {
+        max-width: 600px;
         margin-left: 0;
         position: relative;
         display: flex;

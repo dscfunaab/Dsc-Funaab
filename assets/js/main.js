@@ -6,7 +6,7 @@ const topDiv = document.querySelector('#top');
 const middleDiv = document.querySelector('#middle');
 const bottomDiv = document.querySelector('#bottom');
 
-console.log(screen.width);
+// console.log(window.location);
 
 const animateNavButton = function () {
     if(screen.width < 850) {
