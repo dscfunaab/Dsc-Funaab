@@ -619,6 +619,74 @@ input:active {
     -webkit-appearance: none;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #FCFCFC;
+    padding-top: 50px;
+    color: #333;
+}
+
+
+.footer_logo_container {
+    margin-left: 28px;
+    width: 40%;
+    max-width: 72px;
+}
+
+.footer_logo_image {
+    width: 46px;
+    height: 45px;
+}
+
+.footer_logo_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer_logo_text {
+    width: 68px;
+    height: 40px;
+}
+
+.footer_link_container {
+    width: 60%;
+    display: flex;
+    line-height: 28px;
+    font-size: 12px;
+    color: #333;
+    max-width: 200px;
+}
+
+.footer_link_container div { 
+    max-width: 70px;
+    width: 50%;
+}
+
+.footer_link_container p {
+    margin-top: 0;
+}
+
+.footer_link_container div:first-of-type { 
+    margin-right: 15px;
+}
+
+.footer_link_container div:nth-of-type(2) { 
+    margin-left: 15px;
+}
+
+.trademark {
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 10px;
+    color: #333333;
+    margin: auto;
+}
 
 /******
   PROJECTS PAGE
@@ -862,6 +930,7 @@ input:active {
         max-width: 250px;
         height: 250px; 
     }
+
 }
 
 @media (min-width: 650px) {
@@ -1068,6 +1137,62 @@ input:active {
     .contact_us_heading P {
         margin-bottom: 0;
     } 
+
+    .footer_logo_container {
+       max-width: 250px;
+       display: flex;
+       margin: auto;
+       height: 73px;
+    }
+
+    .footer_logo_image {
+        width: 75.05px;
+        margin-right: 10px;
+        height: 73px;
+    }
+    
+    .footer_logo_text {
+        margin: auto;
+        margin-left: 10px;
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+    }
+
+    .footer_logo_text>* {
+        margin: 0;
+    }
+
+    .footer_link_container {
+        max-width: 600px;
+        height: 45px;
+        margin: auto;
+    }
+
+    .footer_link_container div {
+        max-width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer_link_container div:first-of-type {
+        margin-right: 0;
+    }
+
+    .footer_link_container div:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .footer_link_container div>* {
+        margin: auto;
+        width: auto;
+    }
+
+    .trademark {
+        line-height: 45px;
+        font-size: 16px;
+    }
 
     .project_heading, .members_heading {
         font-weight: bold;
