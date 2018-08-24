@@ -632,7 +632,7 @@ input:active {
 
 
 .footer_logo_container {
-    margin-left: 28px;
+    margin-left: 15px;
     width: 40%;
     max-width: 72px;
 }
@@ -671,11 +671,11 @@ input:active {
 }
 
 .footer_link_container div:first-of-type { 
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .footer_link_container div:nth-of-type(2) { 
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .trademark {
