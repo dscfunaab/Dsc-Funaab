@@ -59,7 +59,6 @@ window.addEventListener('scroll', function() {
         if(windowPosition >= section.offsetTop && windowPosition <= sectionBorder) {
             navLink.forEach(function(link) {
                 let linkAttribute = link.querySelector('a').getAttribute('href');
-                // console.log(linkAttribute, hashPlusSectionId);
                 if( hashPlusSectionId === linkAttribute) {
                     link.classList.add('active_link');
                 } else {
