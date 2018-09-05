@@ -205,6 +205,7 @@ button {
     flex-wrap: wrap;
     margin-bottom: 100px;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 .landing_image {

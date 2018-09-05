@@ -6,16 +6,12 @@ const topDiv = document.querySelector('#top');
 const middleDiv = document.querySelector('#middle');
 const bottomDiv = document.querySelector('#bottom');
 const homeDiv = document.querySelector('#home');
-// const homeDivPosition = homeDiv.offsetTop;
 const aboutDiv = document.querySelector('#about');
-// const aboutDivPosition = aboutDiv.offsetTop;
 const contactUsDiv = document.querySelector('#contact_us');
-// const contactUsDivPosition = contactUsDiv.offsetTop
 const blogDiv = document.querySelector('#blog');
-// const blogDivPosition = blogDiv.offsetTop;
 const coreTeamDiv = document.querySelector('#core_team');
-// const coreTeamDivPosition = coreTeamDiv.offsetTop;
 const pageSection = [homeDiv, aboutDiv, contactUsDiv, blogDiv, coreTeamDiv];
+const headerHeight = document.querySelector('.header').offsetHeight;
 
 const animateNavButton = function () {
     if(screen.width < 850) {
@@ -51,12 +47,14 @@ navLink.forEach(function(link) {
 
 
 window.addEventListener('scroll', function() {
-    const windowPosition = window.scrollY;
+    // 20 makes the active class change at the rigth time
+    const windowPosition = window.scrollY + headerHeight + 20;
     pageSection.forEach(function(section) {
         // the number 90 is to add the active class at the right time
         let sectionBorder = section.offsetTop + section.scrollHeight - 90;
         let hashPlusSectionId = '#' + section.id ;
         if(windowPosition >= section.offsetTop && windowPosition <= sectionBorder) {
+            console.log(windowPosition,section.offsetTop, sectionBorder)
             navLink.forEach(function(link) {
                 let linkAttribute = link.querySelector('a').getAttribute('href');
                 if( hashPlusSectionId === linkAttribute) {
